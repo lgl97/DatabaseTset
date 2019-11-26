@@ -1,0 +1,14 @@
+spring:
+  datasource:
+     username: root
+     password: root
+     url: jdbc:mysql://127.0.0.1:3306/test
+     driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level:
+    root: error
+    org.springframework.web.servlet.DispatcherServlet: error
+  pattern:
+    level: "[%X{X-B3-TraceId}/%X{X-B3-SpanId}] %-5p [%t] %C{2} - %m%n"
+
+#配置druid数据源、
