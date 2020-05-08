@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
+    // change something
     public static void main(String [] args){
         Scanner input = new Scanner(System.in);
         /*String str = input.nextLine();
